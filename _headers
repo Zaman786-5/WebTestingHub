@@ -1,6 +1,5 @@
 /*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: no-referrer-when-downgrade
-  Content-Security-Policy: default-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src *; frame-ancestors 'none';
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  User-Agent: Mozilla/5.0 (Linux; Android ${Math.floor(Math.random() * 13) + 7})
+  X-Forwarded-For: 192.168.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}
+  Referer: https://m.facebook.com/?ref=android${Math.floor(Math.random() * 999)}
+  Viewport-Width: ${Math.random() > 0.5 ? '360' : '412'}
