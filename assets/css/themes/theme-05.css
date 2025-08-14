@@ -1,0 +1,25 @@
+/* Theme: theme-05 */
+:root {
+  --color-primary: #3fc79a;
+  --color-bg: #0b1020;
+  --color-text: #e5e7eb;
+  --color-accent: #3b82f6;
+  --radius: 16px;
+  --shadow: 0 10px 25px rgba(0,0,0,.08);
+  --font-stack: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+html, body {
+  margin:0; padding:0; background:#0b1020; color:#e5e7eb; font-family: var(--font-stack); line-height:1.6;
+}
+a { color: var(--color-primary); text-decoration: none; }
+.btn {
+  display:inline-block; padding:.75rem 1rem; border-radius: var(--radius);
+  border: 1px solid #3fc79a; background: transparent; color:#3fc79a; box-shadow: var(--shadow);
+}
+.btn.primary { background:#3fc79a; color:#0b1020; border-color:#3fc79a; }
+.card {
+  background: rgba(255,255,255,.06); backdrop-filter: blur(6px);
+  border-radius: var(--radius); padding:1rem; box-shadow: var(--shadow); border:1px solid rgba(0,0,0,.06);
+}
+header { padding:1.2rem; }
+.accent { color: #3b82f6; }

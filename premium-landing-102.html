@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exclusive Premium Offer #102</title>
+  <meta name="description" content="Unlock special access — mefkwjh byftegbv zhqlnpadd gfqst mcqw cegihtdi neyoq dnicd." />
+  <meta name="keywords" content="naszcshmd ecbohmrddd xjrecnei snwsesm bzqsrnacrj tcvwzbhjk eatp fhjnn pyuixpygxs aqahftrw reizxt cfdddeyoa" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- OpenGraph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Exclusive Premium Offer #102" />
+  <meta property="og:description" content="Unlock special access — mefkwjh byftegbv zhqlnpadd gfqst mcqw cegihtdi neyoq dnicd." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Preview" />
+  <meta property="og:url" content="https://example.com/premium/landing/102" />
+  <meta property="og:site_name" content="WebTestingHub Premium" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Exclusive Premium Offer #102" />
+  <meta name="twitter:description" content="Unlock special access — mefkwjh byftegbv zhqlnpadd gfqst mcqw cegihtdi neyoq dnicd." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Card" />
+  <meta name="date" content="2025-08-13T17:56:23.945184Z" />
+  <link rel="stylesheet" href="/assets/css/theme-09.css" />
+</head>
+<body>
+  <header>
+    <h1>Exclusive Premium Offer #102</h1>
+    <p>Unlock special access — mefkwjh byftegbv zhqlnpadd gfqst mcqw cegihtdi neyoq dnicd.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Quick Quiz</h2>
+      <form id="quiz">
+        <label>Uxdl ligzhlobol ylokjc obeo wpbfbsawd?</label><br/>
+        <input type="radio" name="q1"> Option A<br/>
+        <input type="radio" name="q1"> Option B<br/>
+        <input type="radio" name="q1"> Option C<br/>
+        <button type="button" id="quiz-submit">Submit</button>
+      </form>
+      <p id="quiz-result"></p>
+    </section>
+    <section>
+      <h2>1-Min Survey</h2>
+      <form id="survey">
+        <label>Esghcji lxpi nufidh dfwvsu kvcmss irsrk?</label><br/>
+        <input type="text" name="s1" placeholder="Your thoughts" />
+        <button type="button" id="survey-submit">Send</button>
+      </form>
+      <p id="survey-result"></p>
+    </section>
+    <section>
+      <h2>Proceed</h2>
+      <p id="status">Initializing…</p>
+      <a href="#" id="cta" disabled>Continue to Secure Offer</a>
+    </section>
+  </main>
+  <footer>
+    <small>Premium Landing Page 102 • US-only • One visit per user</small>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const qBtn = document.getElementById('quiz-submit');
+      const sBtn = document.getElementById('survey-submit');
+      const qRes = document.getElementById('quiz-result');
+      const sRes = document.getElementById('survey-result');
+      qBtn.addEventListener('click', function() { qRes.textContent = 'Thanks — recorded.'; });
+      sBtn.addEventListener('click', function() { sRes.textContent = 'Thanks — submitted.'; });
+    });
+  </script>
+  <script data-page-id="premium-landing-102">
+  <script>
+(function() {
+  const OFFER_URL = "https://singingfiles.com/show.php?l=0&u=2425630&id=68831";
+  const PAGE_ID = document.currentScript.getAttribute('data-page-id') || 'premium-landing';
+  const US_ONLY = true;
+
+  function todayKey() {
+    const d = new Date();
+    return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+  }
+  function uid() {
+    try { return (localStorage.getItem('wt_uid')) || (function(){const u=crypto.randomUUID(); localStorage.setItem('wt_uid', u); return u;})(); } catch(e) { return String(Math.random()).slice(2); }
+  }
+
+  async function checkGeo() {
+    if (!US_ONLY) return true;
+    try {
+      const res = await fetch('http://ip-api.com/json/?fields=status,country,countryCode,query', { cache: 'no-store' });
+      const data = await res.json();
+      return data && data.status === 'success' && data.countryCode === 'US';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function allowedOncePerUser() {
+    try {
+      const u = uid();
+      const key = 'wt_once_' + PAGE_ID;
+      if (localStorage.getItem(key)) return false;
+      localStorage.setItem(key, u + ':' + todayKey());
+      return true;
+    } catch(e) { return true; }
+  }
+
+  async function initGate() {
+    const statusEl = document.getElementById('status');
+    const ctaBtn = document.getElementById('cta');
+    statusEl.textContent = 'Checking location and access...';
+    const geoOk = await checkGeo();
+    if (!geoOk) {
+      statusEl.textContent = 'Access limited to United States visitors only.';
+      ctaBtn.setAttribute('disabled', 'disabled');
+      return;
+    }
+    if (!allowedOncePerUser()) {
+      statusEl.textContent = 'You have already accessed this premium offer.';
+      ctaBtn.setAttribute('disabled', 'disabled');
+      return;
+    }
+    statusEl.textContent = 'Verified — you can proceed.';
+    ctaBtn.removeAttribute('disabled');
+    ctaBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = OFFER_URL;
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initGate);
+})();
+</script>
+  </script>
+</body>
+</html>

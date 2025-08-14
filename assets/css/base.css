@@ -1,0 +1,8 @@
+/* Base styles shared across pages */
+*, *::before, *::after { box-sizing: border-box; }
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.hero { padding: 3rem 1rem; text-align: center; }
+.footer { padding: 2rem 1rem; opacity: .7; text-align: center; font-size: .9rem; }
+.hidden { display: none !important; }
+.badge { padding:.25rem .5rem; border-radius:999px; border:1px solid currentColor; font-size:.75rem; }
