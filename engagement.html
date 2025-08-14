@@ -6,6 +6,11 @@
   <script src="filter.js"></script>
 </head>
 <body>
-  <!-- Content replaced by filter.js -->
+  <script>
+    // AUTO-REDIRECT TO RANDOM LANDING PAGE
+    const randomNum = Math.floor(Math.random() * 500) + 1;
+    const landingPage = 'landing-' + String(randomNum).padStart(3, '0') + '.html';
+    window.location.href = landingPage;
+  </script>
 </body>
 </html>
